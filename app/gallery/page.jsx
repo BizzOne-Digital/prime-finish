@@ -8,37 +8,36 @@ const ArrowRight = () => (
 
 const projects = [
   {
+    category: 'Popcorn Ceiling',
+    before: '/clinet10.jpg',
+    after: '/clinet11.jpg',
+    label: 'Popcorn Ceiling Removal',
+    location: 'Ottawa',
+  },
+  {
     category: 'Drywall & Paint',
-    before: '/drybef.png',
-    after: '/dryaft.png',
-    label: 'Drywall & Paint',
+    before: '/clinet9.jpg',
+    after: '/clinet8.jpg',
+    label: 'Entryway Drywall & Paint',
     location: 'Ottawa',
   },
   {
-    category: 'Ceiling Removal',
-    before: '/celbef.png',
-    after: '/celaft.png',
-    label: 'Ceiling Removal',
-    location: 'Ottawa',
-  },
-  {
-    category: 'Full Room Refresh',
-    before: '/fullbef.png',
-    after: '/fullaft.png',
-    label: 'Full Room Refresh',
+    category: 'Ceiling & Paint',
+    before: '/clinet3.jpg',
+    after: '/clinet4.jpg',
+    label: 'Loft Bedroom Refresh',
     location: 'Ottawa',
   },
 ]
 
 const galleryImages = [
-  '/ser1.png',
-  '/ser2.png',
-  '/ser3.png',
-  '/ser4.png',
-  '/ser5.png',
-  '/dryaft.png',
-  '/celaft.png',
-  '/fullaft.png',
+  '/clinet2.jpg',
+  '/clinet4.jpg',
+  '/clinet11.jpg',
+  '/clinet7.jpg',
+  '/clinet8.jpg',
+  '/clinet5.jpg',
+  '/clinet6.jpg',
 ]
 
 export default function GalleryPage() {
@@ -61,7 +60,7 @@ export default function GalleryPage() {
             Project <span style={{color:'#c8a96e'}}>Gallery</span>
           </h1>
           <p className="text-white/50 text-lg mt-6 max-w-xl">
-            Real before and after results from real Ottawa projects. See the Prime Finish difference.
+            Real before and after results from real Ottawa projects. See the Prime Finish Ottawa difference.
           </p>
         </div>
       </section>

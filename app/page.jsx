@@ -86,12 +86,12 @@ const testimonials = [
   {
     name: 'Sarah M.',
     role: 'Homeowner',
-    text: 'Prime Finish did an amazing job on our drywall and painting. The attention to detail and clean work exceeded our expectations. Highly recommended!',
+    text: 'Prime Finish Ottawa did an amazing job on our drywall and painting. The attention to detail and clean work exceeded our expectations. Highly recommended!',
   },
   {
     name: 'James T.',
     role: 'Property Manager',
-    text: 'We hired Prime Finish for a commercial renovation and they were professional, reliable, and delivered on time. Great experience working with the team.',
+    text: 'We hired Prime Finish Ottawa for a commercial renovation and they were professional, reliable, and delivered on time. Great experience working with the team.',
   },
   {
     name: 'Lisa R.',
@@ -316,19 +316,19 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                before: '/drybef.png',
-                after: '/dryaft.png',
-                label: 'Drywall & Paint',
+                before: '/clinet10.jpg',
+                after: '/clinet11.jpg',
+                label: 'Popcorn Ceiling Removal',
               },
               {
-                before: '/celbef.png',
-                after: '/celaft.png',
-                label: 'Ceiling Removal',
+                before: '/clinet9.jpg',
+                after: '/clinet8.jpg',
+                label: 'Entryway Drywall & Paint',
               },
               {
-                before: '/fullbef.png',
-                after: '/fullaft.png',
-                label: 'Full Room Refresh',
+                before: '/clinet3.jpg',
+                after: '/clinet4.jpg',
+                label: 'Loft Bedroom Refresh',
               },
             ].map((item, i) => (
               <div key={i} className="overflow-hidden" style={{border:'1px solid rgba(200,169,110,0.2)'}}>

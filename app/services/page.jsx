@@ -77,7 +77,7 @@ const services = [
     title: 'Commercial & Residential Services',
     subtitle: 'Serving homeowners, businesses, landlords, and contractors across Ottawa.',
     img: '/ser5.png',
-    desc: 'Prime Finish works with a wide range of clients — from homeowners freshening up a room to property managers turning over rental units to commercial contractors completing full build-outs. We scale our team to match project size and always deliver on schedule.',
+    desc: 'Prime Finish Ottawa works with a wide range of clients — from homeowners freshening up a room to property managers turning over rental units to commercial contractors completing full build-outs. We scale our team to match project size and always deliver on schedule.',
     includes: [
       'Residential homes & condos',
       'Rental & investment properties',

@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Prime Finish | Professional Drywall & Painting Services in Ottawa',
-  description: 'Prime Finish provides professional drywall, painting, popcorn ceiling removal, and finishing services in Ottawa and surrounding areas. Request a free estimate today.',
+  title: 'Prime Finish Ottawa | Professional Drywall & Painting Services in Ottawa',
+  description: 'Prime Finish Ottawa provides professional drywall, painting, popcorn ceiling removal, and finishing services in Ottawa and surrounding areas. Request a free estimate today.',
 }
 
 export default function RootLayout({ children }) {

@@ -139,7 +139,7 @@ export default function ContactPage() {
 
               {/* Why us quick bullets */}
               <div className="mt-10 p-6" style={{background:'#f8f9fc'}}>
-                <h4 className="font-semibold text-sm uppercase tracking-wider mb-4" style={{color:'#1e3a5f'}}>Why Choose Prime Finish?</h4>
+                <h4 className="font-semibold text-sm uppercase tracking-wider mb-4" style={{color:'#1e3a5f'}}>Why Choose Prime Finish Ottawa?</h4>
                 <ul className="space-y-2">
                   {[
                     'Free estimates — no obligation',

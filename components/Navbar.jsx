@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 
 const PhoneIcon = () => (
@@ -45,34 +45,17 @@ const navLinks = [
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'}`}>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-navy-700 flex items-center justify-center" style={{background:'#1e3a5f'}}>
-                <span className="text-white font-bold text-lg font-display">PF</span>
-              </div>
-              <div>
-                <div className={`font-display font-bold text-lg leading-tight transition-colors ${scrolled ? 'text-navy-700' : 'text-white'}`} style={scrolled ? {color:'#1e3a5f'} : {}}>
-                  PRIME FINISH
-                </div>
-                <div className={`text-xs tracking-widest uppercase transition-colors ${scrolled ? 'text-gray-500' : 'text-white/70'}`}>
-                  Drywall · Painting · Finishing
-                </div>
-              </div>
+            <Link href="/" className="flex items-center">
+              <img src="/logo.png" alt="Prime Finish Ottawa" className="h-12 w-auto" />
             </Link>
 
             {/* Desktop Nav */}
@@ -80,8 +63,7 @@ export default function Navbar() {
               {navLinks.map(link => (
                 link.children ? (
                   <div key={link.label} className="relative group">
-                    <button className={`flex items-center gap-1 font-medium text-sm transition-colors hover:text-accent ${scrolled ? 'text-charcoal' : 'text-white'}`}
-                      style={{'--tw-text-opacity':'1'}}>
+                    <button className="flex items-center gap-1 font-medium text-sm text-charcoal transition-colors hover:text-accent">
                       {link.label} <ChevronDown />
                     </button>
                     <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border-t-2 border-accent" style={{borderColor:'#c8a96e'}}>
@@ -96,7 +78,7 @@ export default function Navbar() {
                   </div>
                 ) : (
                   <Link key={link.label} href={link.href}
-                    className={`font-medium text-sm transition-colors hover:text-yellow-400 ${scrolled ? 'text-charcoal' : 'text-white'}`}>
+                    className="font-medium text-sm text-charcoal transition-colors hover:text-yellow-400">
                     {link.label}
                   </Link>
                 )
@@ -105,7 +87,7 @@ export default function Navbar() {
 
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-4">
-              <a href="tel:6137005736" className={`flex items-center gap-2 text-sm font-medium transition-colors ${scrolled ? 'text-navy-700' : 'text-white'}`} style={scrolled ? {color:'#1e3a5f'} : {}}>
+              <a href="tel:6137005736" className="flex items-center gap-2 text-sm font-medium transition-colors" style={{color:'#1e3a5f'}}>
                 <PhoneIcon /> 613-700-5736
               </a>
               <Link href="/contact"
@@ -117,8 +99,8 @@ export default function Navbar() {
 
             {/* Mobile Toggle */}
             <button onClick={() => setMobileOpen(!mobileOpen)}
-              className={`lg:hidden p-2 transition-colors ${scrolled ? 'text-navy-700' : 'text-white'}`}
-              style={scrolled ? {color:'#1e3a5f'} : {}}>
+              className="lg:hidden p-2 transition-colors"
+              style={{color:'#1e3a5f'}}>
               {mobileOpen ? <CloseIcon /> : <MenuIcon />}
             </button>
           </div>

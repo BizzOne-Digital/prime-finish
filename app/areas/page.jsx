@@ -107,7 +107,7 @@ export default function AreasPage() {
                 We're not a big national chain — we're local Ottawa contractors who take pride in our community. Every project we complete adds to our reputation here, and we work hard to keep it excellent.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                When you hire Prime Finish, you're hiring a team that lives and works in Ottawa. We understand local building codes, seasonal considerations, and what Ottawa homeowners and businesses need most.
+                When you hire Prime Finish Ottawa, you're hiring a team that lives and works in Ottawa. We understand local building codes, seasonal considerations, and what Ottawa homeowners and businesses need most.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact"

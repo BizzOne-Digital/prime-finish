@@ -27,7 +27,7 @@ export default function AboutPage() {
       <section className="relative pt-32 pb-20 overflow-hidden" style={{background:'#060e1a'}}>
         <img
           src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=1400&q=80"
-          alt="About Prime Finish"
+          alt="About Prime Finish Ottawa"
           className="absolute inset-0 w-full h-full object-cover opacity-15"
         />
         <div className="absolute left-0 top-0 w-1 h-full" style={{background:'#c8a96e'}} />
@@ -37,7 +37,7 @@ export default function AboutPage() {
             <span className="text-xs uppercase tracking-[0.25em] font-semibold" style={{color:'#c8a96e'}}>Our Story</span>
           </div>
           <h1 className="font-display text-5xl md:text-7xl font-bold text-white leading-tight max-w-2xl">
-            About<br/><span style={{color:'#c8a96e'}}>Prime Finish</span>
+            About<br/><span style={{color:'#c8a96e'}}>Prime Finish Ottawa</span>
           </h1>
           <p className="text-white/50 text-lg mt-6 max-w-xl">
             Ottawa's trusted professionals for drywall, painting, and finishing services.
@@ -72,13 +72,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  Prime Finish was founded with a simple belief: every home and business deserves a finish that looks professional, lasts long, and is done right the first time. We started as a small drywall and painting crew in Ottawa and have grown into one of the region's most trusted finishing contractors.
+                  Prime Finish Ottawa was founded with a simple belief: every home and business deserves a finish that looks professional, lasts long, and is done right the first time. We started as a small drywall and painting crew in Ottawa and have grown into one of the region's most trusted finishing contractors.
                 </p>
                 <p>
                   We serve residential homeowners, landlords, property managers, general contractors, and commercial businesses across Ottawa and surrounding communities including Kanata, Nepean, Orleans, Barrhaven, and beyond.
                 </p>
                 <p>
-                  Our team takes every project personally. From the first call to the final walkthrough, we communicate clearly, work cleanly, and deliver results that exceed expectations. That's the Prime Finish promise.
+                  Our team takes every project personally. From the first call to the final walkthrough, we communicate clearly, work cleanly, and deliver results that exceed expectations. That's the Prime Finish Ottawa promise.
                 </p>
               </div>
 

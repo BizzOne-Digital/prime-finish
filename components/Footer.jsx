@@ -75,14 +75,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 flex items-center justify-center" style={{background:'#c8a96e'}}>
-                <span className="font-bold text-lg font-display" style={{color:'#0f2035'}}>PF</span>
-              </div>
-              <div>
-                <div className="font-display font-bold text-lg text-white">PRIME FINISH</div>
-                <div className="text-xs tracking-widest text-white/50 uppercase">Ottawa's Trusted Contractors</div>
-              </div>
+            <div className="mb-5">
+              <img src="/logo.png" alt="Prime Finish Ottawa" className="h-12 w-auto" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               Professional drywall, painting, and finishing services across Ottawa and surrounding areas. Quality workmanship, clean finishes, and guaranteed satisfaction.
@@ -158,7 +152,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-white/40 text-sm">© 2026 Prime Finish. All Rights Reserved.</p>
+          <p className="text-white/40 text-sm">© 2026 Prime Finish Ottawa. All Rights Reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="text-white/40 text-sm hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="text-white/40 text-sm hover:text-white transition-colors">Terms of Service</Link>
