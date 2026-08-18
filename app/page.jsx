@@ -321,14 +321,14 @@ export default function HomePage() {
                 label: 'Popcorn Ceiling Removal',
               },
               {
-                before: '/clinet9.jpg',
-                after: '/clinet8.jpg',
-                label: 'Entryway Drywall & Paint',
+                before: '/newbath2.jpg',
+                after: '/newbath1.jpg',
+                label: 'Bathroom Painting',
               },
               {
-                before: '/clinet3.jpg',
-                after: '/clinet4.jpg',
-                label: 'Loft Bedroom Refresh',
+                before: '/clinet5.jpg',
+                after: '/clinet6.jpg',
+                label: 'Popcorn Ceiling Removal & Painting',
               },
             ].map((item, i) => (
               <div key={i} className="overflow-hidden" style={{border:'1px solid rgba(200,169,110,0.2)'}}>

@@ -15,17 +15,17 @@ const projects = [
     location: 'Ottawa',
   },
   {
-    category: 'Drywall & Paint',
-    before: '/clinet9.jpg',
-    after: '/clinet8.jpg',
-    label: 'Entryway Drywall & Paint',
+    category: 'Painting',
+    before: '/newbath2.jpg',
+    after: '/newbath1.jpg',
+    label: 'Bathroom Painting',
     location: 'Ottawa',
   },
   {
     category: 'Ceiling & Paint',
-    before: '/clinet3.jpg',
-    after: '/clinet4.jpg',
-    label: 'Loft Bedroom Refresh',
+    before: '/clinet5.jpg',
+    after: '/clinet6.jpg',
+    label: 'Popcorn Ceiling Removal & Painting',
     location: 'Ottawa',
   },
 ]
@@ -34,9 +34,8 @@ const galleryImages = [
   '/clinet2.jpg',
   '/clinet4.jpg',
   '/clinet11.jpg',
-  '/clinet7.jpg',
+  '/newbath1.jpg',
   '/clinet8.jpg',
-  '/clinet5.jpg',
   '/clinet6.jpg',
 ]
 
