@@ -136,7 +136,7 @@ export default function GalleryPage() {
             <p className="text-gray-600 mb-4 font-medium">More project photos coming soon!</p>
             <p className="text-gray-400 text-sm mb-6">We're constantly updating our gallery with fresh Ottawa project results. Follow us on Instagram for the latest.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://www.instagram.com/primefinsh" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.instagram.com/primefinishottawa" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-bold px-8 py-4 uppercase tracking-wider text-sm text-white"
                 style={{background:'#1e3a5f'}}>
                 Follow on Instagram

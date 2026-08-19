@@ -82,12 +82,12 @@ export default function Footer() {
               Professional drywall, painting, and finishing services across Ottawa and surrounding areas. Quality workmanship, clean finishes, and guaranteed satisfaction.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/primefinsh" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.instagram.com/primefinishottawa" target="_blank" rel="noopener noreferrer"
                 className="w-9 h-9 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-accent transition-colors"
                 style={{'--accent':'#c8a96e'}}>
                 <InstagramIcon />
               </a>
-              <a href="#" className="w-9 h-9 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-accent transition-colors">
+              <a href="https://www.facebook.com/share/195eiUPpWK/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-accent transition-colors">
                 <FacebookIcon />
               </a>
             </div>

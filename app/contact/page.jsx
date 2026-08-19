@@ -29,6 +29,11 @@ const InstagramIcon = () => (
     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
   </svg>
 )
+const FacebookIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+  </svg>
+)
 
 const contactInfo = [
   {
@@ -127,14 +132,24 @@ export default function ContactPage() {
               {/* Social */}
               <div className="mt-10 pt-8 border-t border-gray-100">
                 <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold mb-4">Follow Our Work</div>
-                <a
-                  href="https://www.instagram.com/primefinsh"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-6 py-3 text-sm font-semibold text-white transition-all hover:brightness-110"
-                  style={{background:'linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D)'}}>
-                  <InstagramIcon /> @primefinsh
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://www.instagram.com/primefinishottawa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-6 py-3 text-sm font-semibold text-white transition-all hover:brightness-110"
+                    style={{background:'linear-gradient(135deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D)'}}>
+                    <InstagramIcon /> Instagram
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/195eiUPpWK/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 px-6 py-3 text-sm font-semibold text-white transition-all hover:brightness-110"
+                    style={{background:'#1877F2'}}>
+                    <FacebookIcon /> Facebook
+                  </a>
+                </div>
               </div>
 
               {/* Why us quick bullets */}
