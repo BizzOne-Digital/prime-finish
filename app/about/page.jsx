@@ -16,7 +16,7 @@ const values = [
   { title: 'Honest Pricing', desc: 'No surprises. We provide clear, detailed estimates upfront so you always know exactly what you\'re paying for.' },
   { title: 'Clean Job Sites', desc: 'We protect your property during every project and leave your space cleaner than we found it.' },
   { title: 'On-Time Delivery', desc: 'We respect your schedule. Projects are planned and completed within the agreed timeline.' },
-  { title: 'Licensed & Insured', desc: 'Fully licensed contractors backed by liability insurance for your complete peace of mind.' },
+  { title: 'Fully Insured', desc: 'Backed by liability insurance on every job for your complete peace of mind.' },
   { title: 'Free Estimates', desc: 'Get a no-obligation quote on any project — residential or commercial.' },
 ]
 

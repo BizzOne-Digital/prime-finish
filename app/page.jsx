@@ -37,7 +37,7 @@ const RollerIcon = () => (
 )
 
 const trustItems = [
-  { icon: ShieldIcon, label: 'Licensed & Insured' },
+  { icon: ShieldIcon, label: 'Fully Insured' },
   { icon: DollarIcon, label: 'Free Estimates' },
   { icon: StarOutlineIcon, label: 'Satisfaction Guaranteed' },
   { icon: RollerIcon, label: 'Clean & Reliable' },
@@ -321,8 +321,8 @@ export default function HomePage() {
                 label: 'Popcorn Ceiling Removal',
               },
               {
-                before: '/newbath2.jpg',
-                after: '/newbath1.jpg',
+                before: '/newbath1.jpg',
+                after: '/newbath2.jpg',
                 label: 'Bathroom Painting',
               },
               {

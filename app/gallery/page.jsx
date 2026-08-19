@@ -16,8 +16,8 @@ const projects = [
   },
   {
     category: 'Painting',
-    before: '/newbath2.jpg',
-    after: '/newbath1.jpg',
+    before: '/newbath1.jpg',
+    after: '/newbath2.jpg',
     label: 'Bathroom Painting',
     location: 'Ottawa',
   },
@@ -34,7 +34,7 @@ const galleryImages = [
   '/clinet2.jpg',
   '/clinet4.jpg',
   '/clinet11.jpg',
-  '/newbath1.jpg',
+  '/newbath2.jpg',
   '/clinet8.jpg',
   '/clinet6.jpg',
 ]

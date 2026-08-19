@@ -144,7 +144,7 @@ export default function ContactPage() {
                   {[
                     'Free estimates — no obligation',
                     'Response within 24 hours',
-                    'Licensed & fully insured',
+                    'Fully insured',
                     'Clean, professional job sites',
                     'Serving all of Ottawa & area',
                   ].map(item => (
