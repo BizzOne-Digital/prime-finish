@@ -18,13 +18,27 @@ export default function EstimateForm({ dark = false }) {
   const [form, setForm] = useState({ name: '', phone: '', email: '', service: '' })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = e => setForm(p => ({ ...p, [e.target.name]: e.target.value }))
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
     setLoading(true)
-    setTimeout(() => { setLoading(false); setSubmitted(true) }, 1500)
+    setError('')
+    try {
+      const res = await fetch('/api/estimate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error('Request failed')
+      setSubmitted(true)
+    } catch {
+      setError('Something went wrong sending your request. Please call us or try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const inputClass = `w-full px-4 py-3 text-sm border outline-none transition-all focus:border-accent ${
@@ -65,6 +79,7 @@ export default function EstimateForm({ dark = false }) {
         <option value="commercial">Commercial Services</option>
         <option value="other">Other / Not Sure</option>
       </select>
+      {error && <p className="text-sm" style={{color:'#e05252'}}>{error}</p>}
       <button type="submit" disabled={loading}
         className="w-full py-4 font-bold uppercase tracking-wider text-sm flex items-center justify-center gap-2 transition-all hover:brightness-110 disabled:opacity-70"
         style={{background:'#c8a96e', color:'#0f2035'}}>
