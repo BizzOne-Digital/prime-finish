@@ -14,11 +14,13 @@ export async function POST(request) {
   const { name, phone, email, service } = body || {}
 
   if (!name || !phone || !email) {
+    console.error('[estimate] Rejected request: missing required fields.')
     return Response.json({ error: 'Missing required fields.' }, { status: 400 })
   }
 
   const { GMAIL_USER, GMAIL_APP_PASSWORD, NOTIFY_EMAIL } = process.env
   if (!GMAIL_USER || !GMAIL_APP_PASSWORD) {
+    console.error('[estimate] Email not configured: missing GMAIL_USER or GMAIL_APP_PASSWORD.')
     return Response.json({ error: 'Email is not configured.' }, { status: 500 })
   }
 
@@ -44,9 +46,10 @@ export async function POST(request) {
         <p><strong>Service:</strong> ${serviceLabel}</p>
       `,
     })
+    console.log(`[estimate] Email sent successfully for ${name} (${email})`)
     return Response.json({ ok: true })
   } catch (err) {
-    console.error('Failed to send estimate email:', err)
+    console.error(`[estimate] Failed to send email for ${name} (${email}):`, err.message)
     return Response.json({ error: 'Failed to send email.' }, { status: 500 })
   }
 }
