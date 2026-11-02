@@ -46,9 +46,9 @@ const contactInfo = [
   {
     icon: <MailIcon />,
     title: 'Email',
-    value: 'can613ada@gmail.com',
+    value: 'primefinishottawa@gmail.com',
     sub: 'We reply within 24 hours',
-    href: 'mailto:can613ada@gmail.com',
+    href: 'mailto:primefinishottawa@gmail.com',
   },
   {
     icon: <MapPinIcon />,

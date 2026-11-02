@@ -131,7 +131,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-white/60 text-sm">
                 <span className="mt-0.5 flex-shrink-0" style={{color:'#c8a96e'}}><MailIcon /></span>
-                <a href="mailto:can613ada@gmail.com" className="hover:text-white transition-colors">can613ada@gmail.com</a>
+                <a href="mailto:primefinishottawa@gmail.com" className="hover:text-white transition-colors">primefinishottawa@gmail.com</a>
               </li>
               <li className="flex items-start gap-3 text-white/60 text-sm">
                 <span className="mt-0.5 flex-shrink-0" style={{color:'#c8a96e'}}><MapPinIcon /></span>
